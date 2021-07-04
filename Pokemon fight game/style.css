@@ -1,0 +1,193 @@
+body{
+    background-image:url('Graph/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    font-family: sans-serif;
+}
+
+.topNav{
+    display:flex;
+    justify-content: space-between;
+    height:140px;
+    margin-top:3%;
+}
+
+.my-health-bar, .enemy-health-bar{
+    width:50%;
+    margin-top:0.3%;
+    height:50px;
+    border-right:none;
+    display: flex;
+    border:3px solid #808080;
+    padding:0 0.1%;
+}
+
+
+.my-hp-point, .enemy-health-point{
+    background-color:#ff3333;
+    width:5%;
+}
+
+.fight-time{
+    font-size:60px;
+    margin-top:-60px;
+    color:gold;
+ 
+    }
+
+.container{
+    width:100%;
+    height:790px;
+
+}
+
+.my-pokemon, .enemy-pokemon{
+    width:30%;
+    height:600px;
+    position: absolute;
+}
+.my-pokemon{
+    background-image:url('Graph/gengarr.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:35%;
+}
+.enemy-pokemon{
+    left:73%;
+    top:42%;
+    background-image:url('Graph/chargif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ball{
+    width:8%;
+    height:14%;
+    position: absolute;
+    transition: .5s;
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity:0;
+}
+
+.GengarBall{
+    background-image:url('Graph/gengar-shot.png');
+}
+
+.chariBall{
+    background-image:url('Graph/charizard-shot.png')
+}
+
+.ammo{
+    width:100%;
+    height: 50px;
+    top:-25%;
+    position:absolute;
+    display:flex;
+    justify-content: space-between;
+}
+.bullet, .CharBullet{
+    height:100%;
+    width:3%;
+    font-weight: 700;
+    background-color:blueviolet;
+    border-radius:50%;
+    text-align: center;
+    font-size:42px;
+    margin-top:20%;
+
+}
+
+.CharBullet{
+    background-color:orangered;
+}
+.timer{
+    width:50%;
+    font-size:40px;
+    font-weight: 700;
+}
+
+
+.gengarBallAttack{
+    background-image:url('Graph/gengiboom.gif')
+}
+.gengarMelee{
+    background-image: url('Graph/gengi-melee2.gif');
+    background-size: cover;
+    transition:.2s;
+}
+
+.charizardBallAttack{
+    background-image: url('Graph/chariatt.gif');
+}
+
+.charizardMeleeAttack{
+   background-image: url('Graph/charimeleegif.gif');
+   width:35%;
+}
+
+.GengarBlock{
+    border:5px solid blueviolet;
+}
+
+.ChariBlock{
+    border:5px solid crimson;
+}
+
+.info{
+    position: relative;
+    width:100px;
+    text-align: center;
+    height:35px;
+    font-size:30px;
+    font-weight: 700;
+    background-color: #66ff33;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .3s;
+    margin-top:10px;
+}
+
+.info::before{
+    content:'info';
+    position: absolute;
+    left:0;
+}
+    
+
+
+.info:hover{
+    width:400px;
+    height: 400px;
+}
+
+
+
+.manual{
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual p {
+    font-size:15px;
+}
+
+.GengManual{
+    border:1px solid black;
+    height: 100%;
+    width: calc(50% - 2px);
+    display:none;
+}
+
+.CharManual{
+    border:1px solid black;
+    height: 100%;
+    width: calc(50% - 2px);
+    display:none;
+}
+

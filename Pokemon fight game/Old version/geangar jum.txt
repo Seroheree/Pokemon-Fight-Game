@@ -1,0 +1,21 @@
+ if(MyPokemon.classList.contains('jump')){
+                MyPokemon.classList.remove('jump')
+                let chuj=MyPokemon.getBoundingClientRect().top
+                MyPokemon.style.top=`${chuj}px`
+                setTimeout(()=>{
+                     MyPokemon.style.top=null
+                },1000)
+            }
+
+
+
+
+        case 87:
+            MyPokemon.classList.add('jump')
+            if(MyPokemon.classList.contains('gengarBall')){
+                break;
+            }else{
+                setTimeout(()=>{
+                    MyPokemon.classList.remove('jump')
+                    },300)
+            }
